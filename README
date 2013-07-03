@@ -1,0 +1,7 @@
+Right now the scripts have to be run individually and you have to create the folders yourself first.
+
+Folder Structure:
+/home/user/Technic-Solder-Scripts
+/home/user/public_html/repo/mods
+
+Once I get scripts made for every mod I will make a script to run them all at once.

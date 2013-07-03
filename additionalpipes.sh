@@ -10,7 +10,8 @@ else
         rm -r mods/* 2>/dev/null
 fi
  
-DOWNLOAD_URL=$(wget -q https://www.dropbox.com/sh/0hc1l4bn4dvjlni/t82-3--LmE -O- | grep -o -P "https://www.dropbox.com.*?\d\.\d\.\d\-BC\d\.\d\.\d.jar" | tail -1)
+DOWNLOAD_URL=$(wget -q https://www.dropbox.com/sh/0hc1l4bn4dvjlni/t82-3--LmE -O- | \
+grep -o -P "https://www.dropbox.com.*?\d\.\d\.\d\-BC\d\.\d\.\d.jar" | tail -1)
 MOD_VERSION=$(echo $DOWNLOAD_URL | grep -o -P "\d\.\d\.\d\-BC\d\.\d\.\d")
 
 if [ ! -e $MODSLUG-$MOD_VERSION.zip ]
